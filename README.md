@@ -27,7 +27,7 @@ Rewrite the core Unix/Linux tools from scratch, easiest first. Each tool lists f
 
 ## Tier 0: Warm-up (args, stdout, exit codes)
 
-| Tool | Functions to look up | Vague algorithm | Resources |
+| Tool | Functions to look up | Algorithm | Resources |
 |---|---|---|---|
 | `true` / `false` | `exit` | Return 0 or 1 | `man 1 true` |
 | `echo` | `puts`, `printf`, `argv` | Loop over args, print with spaces, handle `-n` | `man 1 echo`, K&R ch. 5 |
