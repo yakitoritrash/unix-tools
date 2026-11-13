@@ -1,0 +1,12 @@
+# Ignore everything by default
+*
+
+!*/
+
+# Allow only source and project files
+!*.c
+!*.h
+!Makefile
+!*.md
+!.gitignore
+!LICENSE
