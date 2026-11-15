@@ -10,10 +10,10 @@ int main(int argc, char *argv[]) {
     } else {
       printf("Try 'whoami --help'");
     }
+  } else {
+      char *s;
+      s = getpwuid(1000)->pw_name;
+      printf("%s\n", s);
+      return 0;
   }
-
-  char *s;
-  s = getpwuid(1000)->pw_name;
-  printf("%s\n", s);
-  return 0;
 }

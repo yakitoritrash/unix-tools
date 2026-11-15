@@ -6,6 +6,8 @@ int str_eq(char *s, char *t) {
     if (*s != *t) {
       return 0;
     }
+    s++;
+    t++;
   }
   return 1;
 }
@@ -15,9 +17,10 @@ int main(int argc, char *argv[]) {
     if (str_eq(argv[1], "-h")) {
       printf("pwd: usage: pwd [-LP]");
     }
+  } else {
+      char s[256];
+      getcwd(s, sizeof(s));
+      printf("%s\n", s);
   }
-  char s[256];
-  getcwd(s, sizeof(s));
-  printf("%s\n", s);
 }
 
